@@ -1222,3 +1222,145 @@ INFO _internal.py:88  * Detected change in '/home/python/Desktop/information/inf
 INFO _internal.py:88  * Restarting with stat
 WARNING _internal.py:88  * Debugger is active!
 INFO _internal.py:88  * Debugger PIN: 471-868-206
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 471-868-206
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 17:42:05] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 17:42:22] "GET /passport/image_code?cur_id=8769ffc1-9db2-4422-9994-0ef91d9b3fe5&pre_id= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 17:42:22] "GET /static/news/images/shutoff.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 17:42:29] "GET /passport/image_code?cur_id=fa797b4b-b533-48d0-8202-be5306ec48a5&pre_id=8769ffc1-9db2-4422-9994-0ef91d9b3fe5 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 17:42:46] "POST /passport/get_msg_code HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 17:43:11] "POST /passport/register HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 17:43:26] "POST /passport/register HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 17:43:27] "POST /passport/register HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 17:43:28] "POST /passport/register HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 17:43:28] "POST /passport/register HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 17:43:28] "POST /passport/register HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 17:43:28] "POST /passport/register HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 17:43:29] "POST /passport/register HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/home/python/Desktop/information/info/modules/passport/views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 471-868-206
+ERROR views.py:111 not all arguments converted during string formatting
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 17:44:01] "POST /passport/register HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 471-868-206
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 17:44:51] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 17:44:51] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 17:44:51] "GET /static/news/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 17:44:51] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 17:44:51] "GET /static/news/js/main.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 17:44:51] "GET /static/news/js/index.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 17:44:51] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 17:44:51] "GET /static/news/images/news_pic.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 17:44:51] "GET /static/news/images/person.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 17:44:51] "GET /static/news/images/pic_code.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 17:44:51] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 17:44:51] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 17:44:52] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 17:44:53] "GET /passport/image_code?cur_id=010f14c1-109f-44d0-9fc4-578cec7c593b&pre_id= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 17:44:59] "GET /passport/image_code?cur_id=0ba505f6-f5ed-4749-ba5f-57c5e3b69faa&pre_id=010f14c1-109f-44d0-9fc4-578cec7c593b HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 17:45:25] "POST /passport/get_msg_code HTTP/1.1" 200 -
+ERROR views.py:111 not all arguments converted during string formatting
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 17:45:38] "POST /passport/register HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/home/python/Desktop/information/info/modules/passport/views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 471-868-206
+INFO _internal.py:88  * Detected change in '/home/python/Desktop/information/info/modules/passport/views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 471-868-206
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 17:49:14] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 17:49:26] "GET /passport/image_code?cur_id=dc09ba01-78a8-49da-b373-09d90ef5600c&pre_id= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 17:49:26] "GET /static/news/images/shutoff.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 17:49:36] "POST /passport/get_msg_code HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 17:49:49] "POST /passport/register HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 17:49:49] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 17:49:49] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 17:49:49] "GET /static/news/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 17:49:49] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 17:49:49] "GET /static/news/js/main.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 17:49:49] "GET /static/news/js/index.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 17:49:49] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 17:49:49] "GET /static/news/images/news_pic.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 17:49:49] "GET /static/news/images/person.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 17:49:50] "GET /static/news/images/pic_code.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 17:49:50] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 17:49:50] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 17:49:50] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88  * Detected change in '/home/python/Desktop/information/info/models.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 471-868-206
+INFO _internal.py:88  * Detected change in '/home/python/Desktop/information/info/modules/passport/views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 471-868-206
+INFO _internal.py:88  * Detected change in '/home/python/Desktop/information/info/modules/passport/views.py', reloading
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 471-868-206
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Restarting with stat
+WARNING _internal.py:88  * Debugger is active!
+INFO _internal.py:88  * Debugger PIN: 471-868-206
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 18:14:38] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 18:15:01] "GET /passport/image_code?cur_id=5be07209-424b-416d-8ca1-c68368560eb2&pre_id= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 18:15:06] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 18:15:06] "GET /static/news/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 18:15:06] "GET /static/news/css/main.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 18:15:06] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 18:15:06] "GET /static/news/js/main.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 18:15:06] "GET /static/news/js/index.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 18:15:06] "GET /static/news/images/logo.png HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 18:15:06] "GET /static/news/images/news_pic.jpg HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 18:15:06] "GET /static/news/images/person.png HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 18:15:06] "GET /static/news/images/pic_code.png HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 18:15:07] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 18:15:07] "GET /passport/image_code?cur_id=7d7fa993-3cf5-423c-9b3a-7607412cfe6e&pre_id= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 18:15:26] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 18:15:26] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 18:15:26] "GET /static/news/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 18:15:26] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 18:15:26] "GET /static/news/js/main.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 18:15:26] "GET /static/news/js/index.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 18:15:26] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 18:15:26] "GET /static/news/images/news_pic.jpg HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 18:15:26] "GET /static/news/images/person.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 18:15:26] "GET /static/news/images/pic_code.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 18:15:26] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 18:15:27] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 18:15:27] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 18:15:33] "GET /passport/image_code?cur_id=69ad34f9-31d4-4cf6-9032-d32c162f07a6&pre_id= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 18:15:33] "GET /static/news/images/shutoff.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 18:15:43] "POST /passport/get_msg_code HTTP/1.1" 200 -
+ERROR views.py:133 (pymysql.err.IntegrityError) (1062, "Duplicate entry '13755773564' for key 'mobile'") [SQL: 'INSERT INTO info_user (create_time, update_time, nick_name, password_hash, mobile, avatar_url, last_login, is_admin, signature, gender) VALUES (%(create_time)s, %(update_time)s, %(nick_name)s, %(password_hash)s, %(mobile)s, %(avatar_url)s, %(last_login)s, %(is_admin)s, %(signature)s, %(gender)s)'] [parameters: {'create_time': datetime.datetime(2018, 6, 13, 18, 17, 23, 699300), 'signature': None, 'last_login': datetime.datetime(2018, 6, 13, 18, 17, 23, 699421), 'avatar_url': None, 'is_admin': 0, 'mobile': ('13755773564',), 'update_time': datetime.datetime(2018, 6, 13, 18, 17, 23, 699378), 'password_hash': 'pbkdf2:sha256:50000$ZWxqYC41$30a25f3aa38b896301b3e835e8bc81b669852d074cb5bd2ab2a038d357e54682', 'gender': 'MAN', 'nick_name': ('13755773564',)}] (Background on this error at: http://sqlalche.me/e/gkpj)
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 18:17:23] "POST /passport/register HTTP/1.1" 200 -
+ERROR views.py:133 (pymysql.err.IntegrityError) (1062, "Duplicate entry '13755773564' for key 'mobile'") [SQL: 'INSERT INTO info_user (create_time, update_time, nick_name, password_hash, mobile, avatar_url, last_login, is_admin, signature, gender) VALUES (%(create_time)s, %(update_time)s, %(nick_name)s, %(password_hash)s, %(mobile)s, %(avatar_url)s, %(last_login)s, %(is_admin)s, %(signature)s, %(gender)s)'] [parameters: {'create_time': datetime.datetime(2018, 6, 13, 18, 19, 29, 441557), 'signature': None, 'last_login': datetime.datetime(2018, 6, 13, 18, 19, 29, 441637), 'avatar_url': None, 'is_admin': 0, 'mobile': ('13755773564',), 'update_time': datetime.datetime(2018, 6, 13, 18, 19, 29, 441613), 'password_hash': 'pbkdf2:sha256:50000$xynLloUP$2aae09f1a37d87bdb627d5a42e2ed491d09a73c25e58ac567ac9a867e4d50c83', 'gender': 'MAN', 'nick_name': ('13755773564',)}] (Background on this error at: http://sqlalche.me/e/gkpj)
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 18:19:29] "POST /passport/register HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 18:19:37] "GET /passport/image_code?cur_id=6dbdbfc4-2b3d-4e19-8eb6-cce552b4ef34&pre_id=69ad34f9-31d4-4cf6-9032-d32c162f07a6 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 18:19:39] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 18:19:39] "GET /static/news/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 18:19:39] "GET /static/news/css/main.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 18:19:39] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 18:19:39] "GET /static/news/js/main.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 18:19:39] "GET /static/news/js/index.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 18:19:39] "GET /static/news/images/logo.png HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 18:19:39] "GET /static/news/images/news_pic.jpg HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 18:19:39] "GET /static/news/images/person.png HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 18:19:39] "GET /static/news/images/pic_code.png HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 18:19:39] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 18:19:40] "GET /passport/image_code?cur_id=740e9ece-d5ce-43b5-8fd3-1251a0189044&pre_id= HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 18:19:49] "POST /passport/get_msg_code HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 18:19:51] "GET /passport/image_code?cur_id=fdee9dbf-c9b5-40b1-b999-51fd357c9355&pre_id=740e9ece-d5ce-43b5-8fd3-1251a0189044 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 18:19:53] "GET /passport/image_code?cur_id=25e75413-026b-44a9-b7fe-e617a289181e&pre_id=fdee9dbf-c9b5-40b1-b999-51fd357c9355 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [13/Jun/2018 18:19:58] "POST /passport/get_msg_code HTTP/1.1" 200 -
