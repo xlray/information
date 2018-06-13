@@ -168,28 +168,31 @@ $(function(){
         // 拼接请求参数
         var params = {
             "mobile":mobile,
-            "sms_code":smscode,
+            "msg_code":smscode,
             "password":password
-        }
 
+        }
         // 发起注册请求
         $.ajax({
             url:"/passport/register",
             type:"POST",
             data:JSON.stringify(params),
             contentType:"application/json",
-            success: function (resp) {
-
-                //判断是否注册成功
-                if(resp.errno == "0"){
-                    //重新加载页面
+            success:function(resp){
+                //判断是否成功
+                if(resp.error =="0"){
                     location.reload()
                 }else{
-                    $("#register-password-err").html(resp.errmsg)
-                    $("#register-password-err").show()
+                    $('#register-password-err').html(resp.errmsg)
+                    $('#register-password-err').show()
+
                 }
 
             }
+
+
+
+
         })
 
 
