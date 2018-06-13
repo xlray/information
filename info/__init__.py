@@ -25,10 +25,13 @@ def create_app(config_name):
     redis_store = redis.StrictRedis(host=Config.REDIS_HOST, port=Config.REDIS_PORT,decode_responses=True)
     Session(app)
     # 设置CSRF程序保护
-    CSRFProtect(app)
-    #蓝图注册app
+    # CSRFProtect(app)
+    #首页蓝图注册app
     from info.modules.index import index_blu
     app.register_blueprint(index_blu)
+    #验证蓝图注册app
+    from info.modules.passport.views import passport_blu
+    app.register_blueprint(passport_blu)
     return app
 
 #设置日志信息作用：用来记录程序的运行过程，比如调试信息，访问接口信息，异常信息。

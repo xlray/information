@@ -110,12 +110,33 @@ $(function(){
         }
 
         // 发起登录请求
+        var params = {
+            "mobile": mobile,
+            "password": password,
+        }
+
+        //发送登陆请求
+        $.ajax({
+            url:"/passport/login",
+            method: "post",
+            data: JSON.stringify(params),
+            contentType: "application/json",
+            success: function (resp) {
+                if (resp.errno == "0") {
+                    // 刷新当前界面
+                    location.reload();
+                }else {
+                    $("#login-password-err").html(resp.errmsg)
+                    $("#login-password-err").show()
+                }
+            }
+        })
     })
 
 
     // TODO 注册按钮点击
     $(".register_form_con").submit(function (e) {
-        // 阻止默认提交操作
+        // 阻止默认提交操作,不让表单自动刷新,不走action
         e.preventDefault()
 
 		// 取到用户输入的内容
@@ -143,15 +164,56 @@ $(function(){
             return;
         }
 
+
+        // 拼接请求参数
+        var params = {
+            "mobile":mobile,
+            "sms_code":smscode,
+            "password":password
+        }
+
         // 发起注册请求
+        $.ajax({
+            url:"/passport/register",
+            type:"POST",
+            data:JSON.stringify(params),
+            contentType:"application/json",
+            success: function (resp) {
+
+                //判断是否注册成功
+                if(resp.errno == "0"){
+                    //重新加载页面
+                    location.reload()
+                }else{
+                    $("#register-password-err").html(resp.errmsg)
+                    $("#register-password-err").show()
+                }
+
+            }
+        })
+
+
 
     })
 })
 
 var imageCodeId = ""
+var preimageCodeId = ""
 
 // TODO 生成一个图片验证码的编号，并设置页面中图片验证码img标签的src属性
 function generateImageCode() {
+
+    //生成一个随机字符串uuid
+    imageCodeId = generateUUID()
+
+    //拼接请求路径
+    image_url = "/passport/image_code?cur_id="+imageCodeId + "&pre_id="+preimageCodeId
+
+    //将image_Url设置到img标签中src
+    $(".get_pic_code").attr("src",image_url)
+
+    // 记录上一次的uuid
+    preimageCodeId = imageCodeId
 
 }
 
@@ -175,6 +237,50 @@ function sendSMSCode() {
     }
 
     // TODO 发送短信验证码
+    // 拼接请求参数
+    var params = {
+        "mobile":mobile,
+        "image_code":imageCode,
+        "image_code_id":imageCodeId
+    }
+
+    // 发送请求
+    $.ajax({
+        url: "/passport/get_msg_code",
+        type:"POST",
+        data:JSON.stringify(params),
+        contentType: "application/json",
+        success: function (resp) {
+            //判断是否请求成功
+            if(resp.error == "0"){
+                //倒计时60秒
+                num = 60;
+                var t = setInterval(function () {
+                    //判断倒计时是否结束
+                    if(num == 1){
+                        //清空定时器
+                        clearInterval(t);
+
+                        //重新设置
+                         $(".get_code").attr("onclick","sendSMSCode()");
+                         $(".get_code").html("点击获取验证码")
+
+                    }else{
+                        // 设置倒计时数字
+                        num -= 1;
+                        $(".get_code").html(num+"秒")
+                    }
+                },1000)
+
+            }else{
+                //短信发送失败
+                alert(resp.errmsg)// 提示
+                generateImageCode() // 生成图片验证码
+                $(".get_code").attr("onclick","sendSMSCode()"); //重新设置可以点击状态
+            }
+        }
+    })
+
 }
 
 // 调用该函数模拟点击左侧按钮
