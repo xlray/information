@@ -8,6 +8,7 @@ from flask import Flask
 from flask.ext.session import Session
 from flask.ext.sqlalchemy import SQLAlchemy
 from flask.ext.wtf import CSRFProtect
+from flask.ext.wtf.csrf import generate_csrf
 
 from config import Config, Config_dict
 
@@ -24,14 +25,26 @@ def create_app(config_name):
     global redis_store
     redis_store = redis.StrictRedis(host=Config.REDIS_HOST, port=Config.REDIS_PORT,decode_responses=True)
     Session(app)
-    # 设置CSRF程序保护
-    # CSRFProtect(app)
+    #开启CSRF保护之后,会对[POST,'PUT','PATCH','DELETE]类型的请求方法做校验
+    #获取cookie中的csrfToken,获取headers请求头里的csrfToken做校验
+    #开发者需要手动设置cookie和headers中的csrfToken
+    #设置CSRF程序保护
+    CSRFProtect(app)
     #首页蓝图注册app
     from info.modules.index import index_blu
     app.register_blueprint(index_blu)
     #验证蓝图注册app
     from info.modules.passport.views import passport_blu
     app.register_blueprint(passport_blu)
+
+    #设置请求钩子afterrequest,每次请求完成之后,都会走该钩子装饰的方法
+    @app.after_request
+    def after_request(resp):
+        #由CSRFProtect提供的一个generate_csrf方法生成csrf_token
+        csrf_token = generate_csrf()
+        resp.set_cookie("csrf_token",csrf_token)
+        return resp
+
     return app
 
 #设置日志信息作用：用来记录程序的运行过程，比如调试信息，访问接口信息，异常信息。
