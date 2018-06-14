@@ -1,5 +1,6 @@
 import random
 import re
+from datetime import datetime
 
 from flask import current_app, jsonify
 from flask import make_response
@@ -91,7 +92,7 @@ def get_msg_code():
 
     #返回前端
     return jsonify(error=RET.OK,errmsg="短信发送成功")
-
+# 注册模块
 @passport_blu.route('/register',methods = ['POST'])
 def register():
     # 1.获取三个参数：手机号，短信验证码，密码
@@ -119,8 +120,8 @@ def register():
         return jsonify(error=RET.DATAERR,errmsg = "短信验证码填写错误")
     # 7.创建用户对象，属性
     user = User()
-    user.nick_name = mobile,
-    user.mobile = mobile,
+    user.nick_name = mobile
+    user.mobile = mobile
     #TODO 未加密
     # user.password_hash = password
     #password是user的一个方法，通过property装饰之后可以当做属性调用。
@@ -139,7 +140,7 @@ def register():
 
 # 登陆 POST请求
 
-@passport_blu.route('/login')
+@passport_blu.route('/login',methods=["POST"])
 def login():
     # 1.获取参数(手机号,密码)
     dict_data = request.json
@@ -150,7 +151,7 @@ def login():
         return jsonify(error=RET.PARAMERR,errmsg="内容为空")
     # 3.通过手机号取出用户对象
     try:
-        user = User.jquery.filter(User.mobile == mobile).first()
+        user = User.query.filter(User.mobile == mobile).first()
     except Exception as e:
         current_app.logger.error(e)
         return jsonify(error=RET.DBERR,errmsg="数据库查询错误")
@@ -164,5 +165,17 @@ def login():
     session['user_id']=user.id
     session['nickname']=user.nick_name
     session['mobile'] = user.mobile
-    # 7.返回前端
+    # 7.记录用户最后登陆时间
+    user.last_login = datetime.now()
+    # 8.返回前端
     return jsonify(error=RET.OK,errmsg="用户登陆成功")
+
+# 登出,POST请求
+@passport_blu.route('/logout', methods=['POST'])
+def logout():
+    # 清除session
+    session.pop("user_id","")
+    session.pop("nick_name","")
+    session.pop("mobile","")
+    return jsonify(error=RET.OK,errmsg = "登出成功！")
+    pass

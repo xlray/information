@@ -11,7 +11,7 @@ from flask.ext.wtf import CSRFProtect
 from flask.ext.wtf.csrf import generate_csrf
 
 from config import Config, Config_dict
-
+from info.utils.common import do_index_filter
 
 db = SQLAlchemy()
 redis_store = None
@@ -44,7 +44,8 @@ def create_app(config_name):
         csrf_token = generate_csrf()
         resp.set_cookie("csrf_token",csrf_token)
         return resp
-
+    #将过滤器添加到模板过滤器当中
+    app.add_template_filter(do_index_filter,"index_filter")
     return app
 
 #设置日志信息作用：用来记录程序的运行过程，比如调试信息，访问接口信息，异常信息。
